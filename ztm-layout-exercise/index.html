@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Layout Exercise</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="block">
+      <ul class="main-nav">
+        <li><a href="#" target="_blank">About</a></li>
+        <li><a href="#" target="_blank">Products</a></li>
+        <li><a href="#" target="_blank">Our Team</a></li>
+        <li class="push"><a href="#" target="_blank">Contacts</a></li>
+      </ul>
+    </nav>
+    <section class="block cover" id="top" name="top">
+      <h1 class="cover__slogan">Discover Our Company</h1>
+      <p class="cover__desc">
+        This is Our New Website. <br />Click the button below to explore our
+        services & products section.
+      </p>
+      <button onclick="window.location.href='#services';">Explore</button>
+    </section>
+    <section class="block grid" id="services">
+      <div class="grid__item">
+        <img src="/images/data_storage_2_2.png" alt="" />
+      </div>
+      <div class="grid__item">
+        <img src="/images/desktop_analytics_2.png" alt="" />
+      </div>
+      <div class="grid__item"><img src="/images/files_2.png" alt="" /></div>
+      <div class="grid__item">
+        <img src="/images/monitor_coding_2.png" alt="" />
+      </div>
+      <div class="grid__item">
+        <img src="/images/monitor_settings_2.png" alt="" />
+      </div>
+      <div class="grid__item">
+        <img src="/images/server_2_2.png" alt="" />
+      </div>
+      <div class="grid__item"><img src="/images/server_3.png" alt="" /></div>
+      <div class="grid__item">
+        <img src="/images/server_safe_2.png" alt="" />
+      </div>
+    </section>
+    <footer class="block footer">
+      <div class="go-top"><a href="#top">Go to top</a></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto 0;
+}
+
+.block,
+.main-nav,
+.footer {
+  color: #444444;
+  display: flex;
+  flex-flow: row no-wrap;
+  font-size: 1.05rem;
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+
+/* I. NAV */
+
+nav {
+  background: #29f194;
+  padding: 0.8em;
+  position: fixed;
+  top: 0;
+}
+
+.main-nav {
+  padding-inline-start: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+}
+
+li {
+  list-style: none;
+  padding: 0.75em;
+}
+
+li a {
+  color: #444444;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.push {
+  margin-left: auto;
+}
+
+/* II. COVER */
+
+.cover {
+  align-items: center;
+  background: #444444;
+  background: center / cover no-repeat
+    url(https://images.unsplash.com/photo-1519155031214-e8d583928bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-color: rgba(51, 51, 51, 0.85);
+  background-blend-mode: multiply;
+  color: aliceblue;
+  flex-flow: column wrap;
+  text-align: center;
+
+  height: 50vh;
+  justify-content: center;
+}
+
+.cover__slogan {
+  border-bottom: 2px solid #29f194;
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 0.15em;
+}
+
+.cover__desc {
+  font-size: 1.2rem;
+  margin-top: -1em;
+}
+
+button {
+  background: #29f194;
+  border: 2px solid #29f194;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 2.5%;
+  padding: 1em 2em;
+  transition: background 0.5s ease;
+}
+
+button:hover {
+  border: 2px solid #29f194;
+  background: none;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .cover__slogan {
+    border-bottom: none;
+    font-size: 2.75rem;
+    padding: 0;
+  }
+
+  .cover__desc {
+    font-size: 1.1rem;
+    padding: 1em;
+  }
+}
+
+/* III. PROJECTS */
+
+.grid {
+  background: aliceblue;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 5%;
+}
+
+.grid__item {
+  background: rgba(68, 68, 68, 0.1);
+  border-radius: 1.5em;
+  margin: 20px;
+  padding: 5em;
+}
+
+.grid__item > img {
+  width: 100%;
+}
+
+/* IV. FOOTER */
+
+.footer {
+  background: #444444;
+  color: aliceblue;
+  padding: 1.2em;
+  text-align: center;
+}
