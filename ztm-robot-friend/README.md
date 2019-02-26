@@ -1,5 +1,5 @@
 ### Description
-Robot fmade with pure CSS, live at [CodePen](https://codepen.io/merkund/pen/rPGOwb)
+Robot made with pure CSS, live at [CodePen.](https://codepen.io/merkund/pen/rPGOwb)
 
 ### Process
 Changed page layout, code structure as well. Had to piece together all robot's parts. Added on-hover animations.
