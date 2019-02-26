@@ -8,4 +8,4 @@ Changed page layout, code structure as well. Had to piece together all robot's p
 **30 mins**
 
 ### Thumbnail
-![css robot](https://github.com/ann-dev/codepen-projects/blob/master/c06-triangles/thumbnail.png "CSS robot")
+![css robot](https://github.com/ann-dev/ztm-exercises/blob/master/ztm-robot-friend/thumbnail.png "CSS robot")
