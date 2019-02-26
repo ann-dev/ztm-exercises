@@ -1,3 +1,5 @@
+![css robot](https://github.com/ann-dev/ztm-exercises/blob/master/ztm-robot-friend/thumbnail.png "CSS robot")
+
 ### Description
 Robot made with pure CSS, live at [CodePen.](https://codepen.io/merkund/pen/rPGOwb)
 
@@ -6,6 +8,3 @@ Changed page layout, code structure as well. Had to piece together all robot's p
 
 ### Time span
 **30 mins**
-
-### Thumbnail
-![css robot](https://github.com/ann-dev/ztm-exercises/blob/master/ztm-robot-friend/thumbnail.png "CSS robot")
