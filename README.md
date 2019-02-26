@@ -1,4 +1,4 @@
-# Zero-to-Mastery-Exercises
+# Zero to Mastery Exercises
 Exercises completed for Zero to Mastery course on Udemy.
 
 | Name                  | Description          | Tags                        |
@@ -8,4 +8,4 @@ Exercises completed for Zero to Mastery course on Udemy.
 | [Grid Exercise](https://github.com/ann-dev/Zero-to-Mastery-Exercises/tree/master/ztm-grid-exercise) | ... | css, css-grid |
 | [Landing Page](https://github.com/ann-dev/Zero-to-Mastery-Exercises/tree/master/ztm-landing-page) | ... | bootstrap4 |
 | [Layout Exercise](https://github.com/ann-dev/Zero-to-Mastery-Exercises/tree/master/ztm-layout-exercise)| ... | html, css,flexbox, css-grid |
-| [Robot Friend]() | ... | css |
+| [Robot Friend](https://github.com/ann-dev/Zero-to-Mastery-Exercises/tree/master/ztm-robot-friend) | ... | css |
