@@ -1,0 +1,127 @@
+body {
+  background: #444;
+  color: #fff;
+  flex-flow: column wrap;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+}
+
+body,
+.robot,
+.head__eyes,
+.rbody__upper,
+.rbody__lower {
+  display: flex;
+}
+
+.blue{
+	background: #00cdd4;
+  transition: all .5s;
+}
+
+.robot:hover .blue { background: #ff9800; }
+
+//ROBOT
+
+.robot {
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.rbody__head { 
+	border-radius: 200px 200px 0 0;
+  height: 150px; 
+	margin: 0 auto;
+  margin-bottom: 10px;
+	width: 200px; 
+} 
+
+.eyes__left {
+  left: 40px;
+	position: relative; 
+	top: 100px; 
+} 
+
+.eyes__right { 
+  left: 120px;
+	position: relative; 
+	top: 100px; 
+}
+
+.eyes__left, 
+.eyes__right { 
+	background-color: #444;
+  border-radius: 15px;
+	height: 20px; 
+	width: 20px;  
+} 
+
+.robot:hover .eyes__left,
+.robot:hover .eyes__right {
+  background-color: #fff;
+  box-shadow:0 0 30px rgba(255,255,255,1);
+  transition: 1s ease-in-out;
+}
+
+.rbody__upper { 
+	height: 150px;
+  width: 300px; 
+} 
+
+.upper__arm--left, 
+.upper__arm--right { 
+	border-radius: 100px;
+	height: 125px;
+  width: 40px;
+} 
+
+.upper__arm--left { margin-right: 10px; } 
+
+.upper__arm--right { margin-left: 10px; } 
+
+.upper__torso {
+  border-radius: 0 0 50px 50px;
+  height: 200px;
+	width: 200px; 	 
+} 
+
+.rbody__lower { 
+	height: 200px;
+  margin: 0 auto;
+  width: 200px;
+} 
+
+.lower__leg--left, 
+.lower__leg--right { 
+	border-radius: 0 0 100px 100px;
+	height: 150px;
+	width: 40px;
+} 
+
+.lower__leg--left { margin-left: 45px; } 
+
+.lower__leg--left:hover {
+	-webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.lower__leg--right { margin-left: 30px; }
+
+//FOOTER
+
+p { padding-top: 20px; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
