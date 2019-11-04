@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, 
+main {
+    padding: 2%;
+}
+
+header {
+    color: #2b2928;
+    margin-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    height: auto;
+    justify-content: center;
+}
+
+.row {
+    min-width: 85%;
+}
+
+.card {
+    padding: 0 !important;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+}
