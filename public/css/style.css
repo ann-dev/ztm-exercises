@@ -7,13 +7,23 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: rgb(102, 109, 131);
+    transition: all .25s ease;
+}
+
+a:hover {
+    color: lightskyblue;
+    text-decoration: underline;
+}
+
 header, 
 main {
     padding: 2%;
 }
 
 header {
-    color: #2b2928;
+    color: #2e2c2b;
     margin-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
@@ -21,6 +31,14 @@ header {
 
 header p {
     font-size: 1.2rem;
+}
+
+.logo {
+    transition: all .5s ease;
+}
+
+.logo:hover {
+    box-shadow: 2px 2px 31px 2px lightskyblue;
 }
 
 main {
@@ -45,5 +63,24 @@ main {
 
 .card-links {
     display: flex;
+    font-size: 1.05rem;
     justify-content: space-between;
+    margin-top: 1rem;
+}
+
+footer {
+    margin-bottom: 1.5rem;
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .logo:hover {
+        cursor: pointer;
+        transform: scale(.9);
+    }
+
 }
