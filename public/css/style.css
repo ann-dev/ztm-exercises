@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Cousine', monospace;
     min-height: 100vh;
 }
 
@@ -11,7 +14,7 @@ main {
 
 header {
     color: #2b2928;
-    margin-top: 8%;
+    margin-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
 }
