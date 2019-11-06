@@ -1,30 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
 
+html {
+    --bg: #f2f2f2;
+    --card: white;
+    --links: #0077FF;
+    --main-font: #2e2c2b;
+    --sub-font: #666A83;
+}
+
+html[data-theme="dark"] {
+    --bg: #121212;
+    --card: rgb(41, 41, 41);
+    --links: #0077FF;
+    --main-font: #E1E1E1;
+    --sub-font: #A5A5A5;
+}
+
 body {
+    background: var(--bg);
     display: flex;
     flex-direction: column;
     font-family: 'Cousine', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
 }
 
 a {
-    color: rgb(102, 109, 131);
+    color: var(--sub-font);
     transition: all .25s ease;
 }
 
 a:hover {
-    color: lightskyblue;
+    color: var(--links);
     text-decoration: underline;
 }
 
-header, 
+p {
+    color: var(--main-font) !important;
+}
+
+/* STYLES */
+
+.toggle-container {
+    padding: 2rem;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: var(--main-font);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: var(--links);
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+header,
 main {
     padding: 2%;
 }
 
 header {
-    color: #2e2c2b;
-    margin-top: 5%;
+    color: var(--main-font);
+    margin-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -38,7 +109,7 @@ header p {
 }
 
 .logo:hover {
-    box-shadow: 2px 2px 31px 2px lightskyblue;
+    box-shadow: 2px 2px 31px 2px var(--links);
 }
 
 main {
@@ -57,7 +128,13 @@ main {
     padding: 0 !important;
 }
 
+.card,
+.card-reveal {
+    background-color: var(--card) !important;
+}
+
 .card-title {
+    color: var(--main-font);
     text-align: left;
 }
 
@@ -69,6 +146,7 @@ main {
 }
 
 footer {
+    color: var(--main-font);
     margin-bottom: 1.5rem;
 }
 
@@ -76,7 +154,27 @@ footer {
     font-size: 2rem;
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        margin-top: 8%;
+    }
+
+}
+
 @media only screen and (min-width: 1024px) {
+
+    header {
+        margin-top: -.5rem;
+    }
 
     .logo:hover {
         cursor: pointer;
