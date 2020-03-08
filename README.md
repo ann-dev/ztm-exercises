@@ -26,5 +26,5 @@
 
 <h4>Completed:</h4>
 <ul>
-  <li>CSS Robot (HTML, CSS)</li>
+  <li>CSS Robot (<em>HTML, CSS</em>)</li>
 </ul>
