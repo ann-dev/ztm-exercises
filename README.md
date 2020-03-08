@@ -21,8 +21,8 @@
 </p>
 
 <h4>In progress:</h4>
-<li>Code Helper (HTML / CSS, Bootstrap) => Add button to remove CSS (v.1)</li>
-<li>Company Page (HTML, CSS)</li>
+<li>Code Helper (<em>HTML / CSS, Bootstrap</em>) => Add button to remove CSS (v.1)</li>
+<li>Company Page (<em>HTML, CSS</em>)</li>
 
 <h4>Completed:</h4>
 <ul>
